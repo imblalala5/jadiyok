@@ -1,0 +1,184 @@
+/* style.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu-bar {
+    background-color: #444;
+    overflow: hidden;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar ul li {
+    float: left;
+}
+
+.menu-bar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+}
+
+.deskripsi-toko {
+    margin-bottom: 20px;
+}
+
+.deskripsi-toko h2 {
+    margin-top: 0;
+}
+
+.camera-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.camera-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.camera-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.camera-item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.order-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.order-button:hover {
+    background-color: #45a049;
+}
+
+.order-form {
+    margin: 20px 0;
+}
+
+.order-form h2 {
+    margin-top: 0;
+}
+
+.order-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form label {
+    margin-top: 10px;
+}
+
+.order-form input,
+.order-form select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.order-form button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.order-form button:hover {
+    background-color: #45a049;
+}
+
+#spesifikasi-kamera {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info div {
+    margin: 10px;
+}
+
+.contact-info h3 {
+    margin-top: 0;
+}
+
+.contact-info p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.contact-info p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .camera-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
